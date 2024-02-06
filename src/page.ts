@@ -3,6 +3,7 @@ import { Guard } from './utils'
 import { text2page, image2page } from './core'
 
 const PageWatermark = (config: WaterMarkConfig, wmType: 'image' | 'text') => {
+  console.log("PageWatermark=", wmType, wmType === 'image')
   // 添加水印
   let observe: Guard = wmType === 'image' ? image2page(config) : text2page(config)
   // 开始监控水印变化

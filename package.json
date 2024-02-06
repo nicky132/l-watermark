@@ -1,5 +1,5 @@
 {
-  "name": "l-watermark",
+  "name": "@nicky/watermark",
   "version": "2.1.2",
   "description": "l-watermark：一个支持TS的前端水印SDK，可以自由的在图片或前端页面中添加各种形式和内容的水印（或暗水印）！",
   "keywords": [
@@ -16,7 +16,7 @@
   "files": [
     "dist"
   ],
-  "author": "liurx <liurx_web@163.com>",
+  "author": "hezhengquan",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CleverLiurx/l-watermark.git"
@@ -29,6 +29,7 @@
     "lint": "tslint -p tsconfig.json",
     "prebuild": "rimraf dist",
     "build": "tsc && rollup -c rollup.config.ts",
+    "build:jump": "rollup -c rollup.config.ts",
     "start": "rollup -c rollup.config.ts -w",
     "format": "prettier --write \"src/**/*.ts\"",
     "preversion": "npm run lint",

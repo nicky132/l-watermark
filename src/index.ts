@@ -9,6 +9,7 @@ class WaterMark {
       // 根据用户输入的配置生成完整的水印配置
       const configs = await initConfig(config)
       const target = configs.target
+      console.log("target.nodeName=", target.nodeName)
       if (target.nodeName === 'IMG') {
         // 给图片添加水印
         await ImageWatermark(configs, configs.image ? 'image' : 'text')

@@ -22,7 +22,7 @@ export const getTextSize: (text: string, fontSize: number) => { width: number; h
   if (span.textContent) {
     span.textContent = text
   } else {
-    span.innerText = text
+    span.innerHTML = text
   }
 
   result.width = span.offsetWidth - result.width
